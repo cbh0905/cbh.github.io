@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恶搞页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>欢迎来到恶搞页面！</h1>
+    <button onclick="handleButton1()">你真的要操控我吗？</button>
+    <button onclick="handleButton2()">不要点击这个按钮！</button>
+
+    <script>
+        function handleButton1() {
+            const response = confirm("警告：你正在尝试操控我！\n确认要继续吗？");
+            if (response) {
+                alert("你这个臭煞笔我操你妈，控你妈呢？什么寄吧心理");
+            } else {
+                alert("明智的选择！宇宙很安全。");
+            }
+        }
+
+        function handleButton2() {
+            alert("你为什么不听劝告？\n现在你的应景要爆炸了！！");
+        }
+    </script>
+</body>
+</html>
